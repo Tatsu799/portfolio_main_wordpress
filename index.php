@@ -3,7 +3,7 @@
         <section class="top" id="top">
             <div class="top-wrapper __inner">
                 <div class="top-wrapper__ttl">
-                    <h1>TATSUYA YOSHIIKE</h1>
+                    <h1>YOSHI DESIGN</h1>
                     <p>Web Design</p>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                         </div>
                         <div class="about-top-wrapper__con__box__txt">
                             <p>
-                                コミュニケーションを大切に客様の要望をしっかりとお聞きした上でどのようなサイトを制作していきたいのかを把握した上でのウェブ制作を心がけております。
+                                コミュニケーションを大切に客様の要望をしっかりとお聞きしどのようなサイトを制作していきたいのかを把握した上での制作を心がけております。
                             </p>
                             <p>    
                                 ウェブサイト制作を通じての出会いを大切にし一人でも多くの方のお役に立てるように日々努力を重ねております。

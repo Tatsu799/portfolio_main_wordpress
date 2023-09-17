@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"content="<?php bloginfo('description')?>">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Webデザイン,Webサイト制作,ホームページ,ランティングページ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="yoshidesign.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="">
+    <meta property="og:title" content="<?php bloginfo('name'); ?>">
     <meta property="og:description"content="<?php bloginfo('description')?>">
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:image" content="">
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <!-- jquery -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
@@ -30,7 +29,7 @@
             <div class="header-wrapper">
                 <div class="header-wrapper__ttl">
                     <a href="<?php echo home_url(); ?>">
-                        <p>tatsuyayoshiike.com</p>
+                        <p><?php bloginfo('name'); ?></p>
                     </a>
                 </div>
                 <nav class="header-wrapper__nav">

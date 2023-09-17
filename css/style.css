@@ -976,7 +976,7 @@ header .drawer {
   background-color: #fff;
 }
 .about-top-wrapper__con__box__ttl h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .about-top-wrapper__con__box__txt {
@@ -1230,7 +1230,7 @@ header .drawer {
 }
 
 .works {
-  padding-top: 105px;
+  padding-top: 75px;
 }
 @media screen and (max-width: 480px) {
   .works {
@@ -1409,7 +1409,7 @@ header .drawer {
 }
 
 .works-detail {
-  padding-top: 105px;
+  padding-top: 75px;
 }
 @media screen and (max-width: 480px) {
   .works-detail {
@@ -1603,7 +1603,6 @@ header .drawer {
   width: 100%;
   margin: 10% 0 5% 0;
   font-size: 1rem;
-  font-weight: 600;
 }
 @media screen and (max-width: 480px) {
   .works-detail-wrapper .pagination {
@@ -1649,7 +1648,7 @@ header .drawer {
 }
 
 .about {
-  padding-top: 105px;
+  padding-top: 75px;
 }
 @media screen and (max-width: 480px) {
   .about {
@@ -1738,18 +1737,6 @@ header .drawer {
     width: 100%;
   }
 }
-.about-wrapper__con__box p {
-  margin: 0 0 0 15%;
-  text-align: left;
-}
-@media screen and (max-width: 480px) {
-  .about-wrapper__con__box p {
-    width: 100%;
-    margin: 0 0 0 0;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-}
 .about-wrapper__con__box .txt {
   width: 50%;
 }
@@ -1768,7 +1755,7 @@ header .drawer {
 }
 
 .contact {
-  padding-top: 105px;
+  padding-top: 75px;
 }
 @media screen and (max-width: 480px) {
   .contact {
@@ -1918,7 +1905,7 @@ header .drawer {
   align-items: center;
   margin: 0 auto;
   width: 10rem;
-  padding: 30px 25px;
+  padding: 25px 25px;
   color: #fff;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
