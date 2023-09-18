@@ -1637,6 +1637,20 @@ body.nav-open header .drawer {
     }
 }
 
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    position: relative;
+    content: "";
+    top: -40px;
+    left:0;
+}
+
+.contact-wrapper__con__form__box:nth-of-type(6) .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    position: relative;
+    content: "";
+    top: 0;
+    left:0;
+}
+
 //404page
 .no-page {
     height: 70vh;
