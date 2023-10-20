@@ -3,13 +3,14 @@
         <section class="works" id="works">
             <div class="works-wrapper __inner">
                 <div class="works-wrapper__ttl">
+                <?php get_template_part('template-parts/breadcrumb'); ?>
                     <div class="ttl">
                         <p>制作実績</p>
                         <h2 class="ttl-main" data-en="Works"><span>WORKS</span></h2>
                     </div>
                 </div>
                 <h3>My Works</h3>
-                
+            
                 <div class="works-wrapper__con">
                     <?php
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

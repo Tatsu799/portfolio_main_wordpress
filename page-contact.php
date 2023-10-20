@@ -3,6 +3,7 @@
         <section class="contact" id="contact">
             <div class="contact-wrapper __inner">
                 <div class="contact-wrapper__ttl">
+                    <?php get_template_part('template-parts/breadcrumb'); ?>
                     <div class="ttl">
                         <p>お問い合わせ</p>
                         <h2 class="ttl-main" data-en="Contact"><span>CONTACT</span></h2>

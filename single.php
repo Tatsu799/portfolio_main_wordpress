@@ -3,6 +3,7 @@
         <section class="works-detail" id="works-detail">
             <div class="works-detail-wrapper __inner">
                 <div class="works-detail-wrapper__ttl">
+                    <?php get_template_part('template-parts/breadcrumb'); ?>
                     <div class="ttl">
                         <p>制作実績</p>
                         <h2 class="ttl-main" data-en="Works"><span>WORKS</span></h2>
