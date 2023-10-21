@@ -2,6 +2,7 @@
     <main>
         <section class="no-page" id="no-page">
             <div class="no-page-wrapper __inner">
+                <?php get_template_part('template-parts/breadcrumb'); ?>
                 <div class="no-page-wrapper__ttl">
                     <h2><span>エラー </span>404 NOT FOUND</h2>
                 </div>
