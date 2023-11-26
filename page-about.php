@@ -2,8 +2,12 @@
     <main>
         <section class="about" id="about">
             <div class="about-wrapper __inner">
+              <div class="__breadcrumb">
+                <a href="<?php echo home_url();?>">HOME</a>
+                <span>></span>
+                <a href="<?php 	echo get_the_permalink();?>">ABOUT</a>
+              </div>
                 <div class="about-wrapper__ttl">
-                    <?php get_template_part('template-parts/breadcrumb'); ?>
                     <div class="ttl">
                         <p>自己紹介</p>
                         <h2 class="ttl-main" data-en="About"><span>ABOUT</span></h2>

@@ -47,7 +47,7 @@
                 </div>
                 
                 <div class="works-top-wrapper__con__btn fadeLeftTrigger">
-                    <a href="<?php echo get_category_link(4); ?>">
+                    <a href="<?php echo get_page_link(181); ?>"><!-- 本番環境ではID5 -->
                         <p>実績一覧</p>
                     </a>
                 </div>

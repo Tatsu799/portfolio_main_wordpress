@@ -2,8 +2,12 @@
     <main>
         <section class="contact" id="contact">
             <div class="contact-wrapper __inner">
+            <div class="__breadcrumb">
+              <a href="<?php echo home_url();?>">HOME</a>
+              <span>></span>
+              <a href="<?php 	echo get_the_permalink();?>">CONTACT </a>
+            </div>
                 <div class="contact-wrapper__ttl">
-                    <?php get_template_part('template-parts/breadcrumb'); ?>
                     <div class="ttl">
                         <p>お問い合わせ</p>
                         <h2 class="ttl-main" data-en="Contact"><span>CONTACT</span></h2>
