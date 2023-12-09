@@ -1,5 +1,47 @@
 @use "../global" as *;
 
+//animation-top
+.txt-1
+  {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+   -webkit-transform: translateX(-30px);
+       -ms-transform: translateX(-30px);
+           transform: translateX(-30px);
+  display: block;
+  -webkit-animation: catch_anime 1s forwards 1s;
+  animation: catch_anime 1s forwards 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes catch_anime {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes catch_anime {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+//fade animation
 .fadeUp {
   -webkit-animation: fadeUpAnime 0.8s forwards;
           animation: fadeUpAnime 0.8s forwards;

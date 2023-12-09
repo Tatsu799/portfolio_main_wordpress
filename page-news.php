@@ -1,41 +1,46 @@
 <?php get_header(); ?>
   <main>
-    <section class="works" id="works">
-      <div class="works-wrapper __inner">
+    <section class="news" id="news">
+      <div class="news-wrapper __inner">
         <div class="__breadcrumb">
           <a href="<?php echo home_url();?>">HOME</a>
           <span>></span>
-          <a href="<?php 	echo get_the_permalink();?>">WORKS</a>
+          <a href="<?php 	echo get_the_permalink();?>">NEWS</a>
         </div>
-        <div class="works-wrapper__ttl">
+        <div class="news-wrapper__ttl">
           <div class="ttl">
-            <p>制作実績</p>
-            <h2 class="ttl-main" data-en="Works"><span>WORKS</span></h2>
+            <p>ニュース</p>
+            <h2 class="ttl-main" data-en="news"><span>NEWS</span></h2>
           </div>
         </div>
-        <h3>My Works</h3>
-        <div class="works-wrapper__con">
+        <div class="news-wrapper__con">
+          <h3 class="news-wrapper__con__ttl">All News</h3>
           <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $the_query = new WP_Query( array(
               'post_status' => 'publish',
               'paged' => $paged,
-              'category_name' => 'works',
+              'category_name' => 'news',
               'posts_per_page' => 4, //ページの表示数変更可能
               'orderby'     => 'date',
               'order' => 'ASC'
             ) );
             if ($the_query->have_posts()) :?><?php
               while ($the_query->have_posts()) : $the_query->the_post();?>
-            <div class="works-wrapper__con__box">
-              <a href="<?php the_permalink(); ?>">
-                <div class="works-wrapper__con__box__img">
-                  <?php the_post_thumbnail(); ?>
-                </div>
-                <div class="works-wrapper__con__box__txt">
-                  <p><span></span><?php the_title(); ?> <br class="__sp"><small><?php the_field('demo1'); ?></small></p>
-                </div>
-              </a>
+            <div class="news-wrapper__con__cont">
+              <div class="news-wrapper__con__cont__date">
+                <a href="<?php the_permalink(); ?>">
+                  <p class="date"><?php the_time('Y.m.d'); ?></p>
+                </a>
+              </div>
+              <div class="news-wrapper__con__cont__txt">
+                <a href="<?php the_permalink(); ?>">
+                  <h3 class="title"><?php the_title(); ?></h3>
+                  <P class="txt">
+                    <?php echo wp_trim_words(get_the_content(), 70, '...'); ?>
+                  </P>
+                </a>
+              </div>
             </div>
           <?php endwhile;?><?php endif; ?>
           <?php wp_reset_postdata(); ?>
@@ -69,10 +74,10 @@
     <section class="contact-top" id="contact">
       <div class="contact-top-wrapper __inner">
         <div class="contact-top-wrapper__ttl">
-          <div class="ttl">
-            <p>お問い合わせ</p>
-            <h2 class="ttl-main" data-en="Contact"><span>CONTACT</span></h2>
-          </div>
+            <div class="ttl">
+                <p>お問い合わせ</p>
+                <h2 class="ttl-main" data-en="Contact"><span>CONTACT</span></h2>
+            </div>
         </div>
         <div class="contact-top-wrapper__con">
           <div class="contact-top-wrapper__con__txt">
