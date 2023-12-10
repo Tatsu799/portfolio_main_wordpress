@@ -276,6 +276,9 @@ button {
 //ServiceTop
 .service-top {
   padding: 0 0 8% 0;
+  @include mq(tab) {
+    padding: 0 0 0 0;
+  }
   &-wrapper {
     height: 100%;
     &__ttl {
@@ -449,6 +452,7 @@ button {
           width: 90%;
         }
         @include mq(sp_1) {
+          display: block;
           width: 100%;
         }
         &__date {
@@ -462,6 +466,9 @@ button {
         &__txt {
           .title {
             font-size: 1.5rem;
+            @include mq(sp_1) {
+              font-size: 1.2rem;
+            }
           }
         }
       }
