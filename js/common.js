@@ -1,58 +1,58 @@
 'use strict';
 
 //スクロールした際にアニメーションを実行する。
-let windowSize = $(window).width();
-$(function () {
+let windowSize = jQuery(window).width();
+jQuery(function () {
   if (windowSize > 769) {
   } else {
-  $("header .drawer").click(function () {
-    $('body').toggleClass('nav-open');
-    $('header .header-wrapper__nav').fadeToggle(200);
+    jQuery("header .drawer").click(function () {
+    jQuery('body').toggleClass('nav-open');
+    jQuery('header .header-wrapper__nav').fadeToggle(200);
   }); 
-  $(".header-wrapper__nav__list__item a").click(function () {
-    $('body').toggleClass('nav-open');
-    $('header .header-wrapper__nav').fadeToggle(200);
+  jQuery(".header-wrapper__nav__list__item a").click(function () {
+    jQuery('body').toggleClass('nav-open');
+    jQuery('header .header-wrapper__nav').fadeToggle(200);
   });
   }
 });
 
 // フェードイン
 function fadeIn() {
-  $('.fadeUpTrigger').each(function() {
-  let scroll = $(window).scrollTop();
-  let triTop = $(this).offset().top + 100;
-  let winHeight = $(window).height();
+  jQuery('.fadeUpTrigger').each(function() {
+  let scroll = jQuery(window).scrollTop();
+  let triTop = jQuery(this).offset().top + 100;
+  let winHeight = jQuery(window).height();
   if (scroll >= triTop - winHeight) {
-  $(this).addClass('fadeUp');
+    jQuery(this).addClass('fadeUp');
   }
 });
 
-$('.fadeLeftTrigger').each(function() {
-  let scroll = $(window).scrollTop();
-  let triTop = $(this).offset().top + 100;
-  let winHeight = $(window).height();
+jQuery('.fadeLeftTrigger').each(function() {
+  let scroll = jQuery(window).scrollTop();
+  let triTop = jQuery(this).offset().top + 100;
+  let winHeight = jQuery(window).height();
   if (scroll >= triTop - winHeight) {
-  $(this).addClass('fadeLeft');
+    jQuery(this).addClass('fadeLeft');
   }
 });
 
-$('.fadeRightTrigger').each(function() {
-  let scroll = $(window).scrollTop();
-  let triTop = $(this).offset().top + 100;
-  let winHeight = $(window).height();
+jQuery('.fadeRightTrigger').each(function() {
+  let scroll = jQuery(window).scrollTop();
+  let triTop = jQuery(this).offset().top + 100;
+  let winHeight = jQuery(window).height();
   if (scroll >= triTop - winHeight) {
-  $(this).addClass('fadeRight');
+    jQuery(this).addClass('fadeRight');
   }
 });
 }
 
-$(window).scroll(function() {
+jQuery(window).scroll(function() {
 fadeIn();
 });
 
 //slider の実装
-$(function() {
-  $(".slider").slick({
+jQuery(function() {
+  jQuery(".slider").slick({
     autoplaySpeed: 2500,
     speed: 1500,
     arrows: false, 
@@ -81,4 +81,3 @@ $(function() {
     ],
   });
 });
-

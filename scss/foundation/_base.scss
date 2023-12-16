@@ -4,7 +4,7 @@ html {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  scroll-padding-top: 100px; //固定ヘッダーの高さを指定
+  scroll-padding-top: 130px; //固定ヘッダーの高さを指定
   @include mq(sp_1) {
       scroll-padding-top: 80px;
   }
@@ -49,7 +49,7 @@ li {
   margin-bottom: 2rem;
   z-index: 100;
   @include mq(sp_1) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   a:nth-of-type(1) {
     padding-right: 0.35rem;
@@ -118,6 +118,30 @@ li {
     &:hover {
       opacity: 0.5;
     }
+  }
+}
+
+.scroll-top {
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #333;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 9999;
+  @include mq(sp_1) {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.8rem;
   }
 }
 

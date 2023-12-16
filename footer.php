@@ -15,11 +15,7 @@
     </div>
   </div>
   </footer>
-  <div id="top-button" class="top-button">TOP</div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/top-button.js"></script>
+  <div id="scroll-top" class="scroll-top">TOP</div>
   <?php wp_footer(); ?>
 </body>
 </html>

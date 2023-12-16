@@ -2,9 +2,9 @@
   <main>
     <section class="top" id="top">
       <div class="top-wrapper __inner">
-        <div class="top-wrapper__ttl txt-1">
-          <h1>YOSHI DESIGN</h1>
-          <p>Web Design</p>
+        <div class="top-wrapper__ttl">
+          <h1 class="txt-1">YOSHI DESIGN</h1>
+          <p class="txt-1">Web Design</p>
         </div>
       </div>
     </section>

@@ -168,7 +168,7 @@ html {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 130px;
 }
 @media screen and (max-width: 480px) {
   html {
@@ -219,7 +219,7 @@ li {
 }
 @media screen and (max-width: 480px) {
   .__breadcrumb {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 .__breadcrumb a:nth-of-type(1) {
@@ -296,6 +296,32 @@ li {
 }
 .pagination .page-numbers:hover {
   opacity: 0.5;
+}
+
+.scroll-top {
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #333;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 9999;
+}
+@media screen and (max-width: 480px) {
+  .scroll-top {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.8rem;
+  }
 }
 
 * .__pc {
@@ -716,75 +742,24 @@ header .drawer {
   height: 100%;
 }
 .top-wrapper__ttl {
-  position: relative;
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  text-align: center;
 }
 .top-wrapper__ttl h1 {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  content: "";
+  top: 45%;
   font-family: "Indie Flower", cursive;
   font-size: 3rem;
   font-weight: 200;
 }
-@media screen and (max-width: 768px) {
-  .top-wrapper__ttl h1 {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .top-wrapper__ttl h1 {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 320px) {
-  .top-wrapper__ttl h1 {
-    font-size: 2rem;
-  }
-}
 .top-wrapper__ttl p {
-  position: absolute;
-  margin: 0;
+  position: relative;
+  top: 45%;
   font-size: 1rem;
   font-weight: 700;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.top-button {
-  color: #fff;
-  background-color: #000;
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  font-size: 1rem;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  border-radius: 50%;
-  text-align: center;
-  border: 1px solid #333;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 9999;
-}
-@media screen and (max-width: 480px) {
-  .top-button {
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 0.8rem;
-  }
 }
 
 .works-top {
@@ -1527,9 +1502,14 @@ button {
 .works {
   padding-top: 75px;
 }
+@media screen and (max-width: 768px) {
+  .works {
+    padding-top: 60px;
+  }
+}
 @media screen and (max-width: 480px) {
   .works {
-    padding-top: 85px;
+    padding-top: 37px;
   }
 }
 .works-wrapper {
@@ -2306,9 +2286,14 @@ button {
 .news {
   padding-top: 75px;
 }
+@media screen and (max-width: 768px) {
+  .news {
+    padding-top: 60px;
+  }
+}
 @media screen and (max-width: 480px) {
   .news {
-    padding-top: 85px;
+    padding-top: 37px;
   }
 }
 .news-wrapper {
@@ -2463,9 +2448,14 @@ button {
 .news-detail {
   padding-top: 75px;
 }
+@media screen and (max-width: 768px) {
+  .news-detail {
+    padding-top: 60px;
+  }
+}
 @media screen and (max-width: 480px) {
   .news-detail {
-    padding-top: 85px;
+    padding-top: 37px;
   }
 }
 .news-detail-wrapper {
@@ -2678,10 +2668,6 @@ button {
   -o-transition: 1s;
   transition: 1s;
   opacity: 0;
-  -webkit-transform: translateX(-30px);
-  -ms-transform: translateX(-30px);
-  transform: translateX(-30px);
-  display: block;
   -webkit-animation: catch_anime 1s forwards 1s;
   animation: catch_anime 1s forwards 1s;
   -webkit-animation-delay: 1s;
@@ -2690,8 +2676,8 @@ button {
 
 @-webkit-keyframes catch_anime {
   0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
