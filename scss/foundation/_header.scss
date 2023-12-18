@@ -55,16 +55,16 @@ header {
         width: auto;
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         -webkit-transform: translateY(-50%) translateX(-50%);
             -ms-transform: translateY(-50%) translateX(-50%);
                 transform: translateY(-50%) translateX(-50%);
-      &__item {
-        margin: 5% auto;
-        border-right: none;
-        font-size: 1.5rem;
-        line-height: 3;
+        &__item {
+          margin: 0 auto;
+          border-right: none;
+          font-size: 1.5rem;
+          line-height: 2.5;
         a {
             color: #333;
           }
@@ -111,8 +111,8 @@ body.nav-open header .drawer {
     top: 0;
     left: 0;
     background-color: rgba(255,255,255);
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
     z-index: 200;
     @include mq(sp_1) {
         height: 80px;
@@ -169,7 +169,6 @@ body.nav-open header .drawer {
           font-family: $f-en;
           padding: 0 1.5rem 0 1.5rem;
           @include mq(pc_max) {
-            // padding: 0 1rem 0 1rem;  
             padding: 0 0.5rem 0 0.5rem; 
           }
           &:hover {
@@ -178,9 +177,6 @@ body.nav-open header .drawer {
           a {
             position: relative;
             width: 100%;
-            // @include mq(tab) {
-            //   width: 100%;
-            // }
             &::after {
               position: absolute;
               content: "";
@@ -197,6 +193,9 @@ body.nav-open header .drawer {
                       transform: scale(0,0);
                 @include mq(tab) {
                   top: 50px;
+                }
+                @include mq(sp_1) {
+                  top: 35px;
                 }
               }
               &:hover::after {
