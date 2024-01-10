@@ -213,7 +213,7 @@ body.nav-open header .drawer {
             @include mq(tab) {
               margin-right: unset;
             }
-            a { //pから変更
+            a {
               display: inline-block;
               color: #fff;
               width: 150px;
