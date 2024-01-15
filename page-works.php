@@ -23,7 +23,7 @@
               'category_name' => 'works',
               'posts_per_page' => 4, //ページの表示数変更可能
               'orderby'     => 'date',
-              'order' => 'ASC'
+              'order' => 'DESC'
             ) );
             if ($the_query->have_posts()) :?><?php
               while ($the_query->have_posts()) : $the_query->the_post();?>

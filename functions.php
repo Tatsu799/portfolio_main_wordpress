@@ -31,8 +31,19 @@ add_theme_support('post-thumbnails');
 add_filter('wpcf7_autop_or_not', 'my_wpcf7_autop');
 function my_wpcf7_autop()
 {
-    return false;
+  return false;
 }
+
+//reCAPTCHAマークをお問い合わせのみ表示する。
+//ContactForm7のお問い合わせページ以外で読み込まないように設定。
+function load_recaptcha_js() {
+  if ( ! is_page( 'contact' ) ) {
+  wp_deregister_script( 'google-recaptcha' );
+  wp_dequeue_style( 'contact-form-7' );
+  wp_deregister_script( 'contact-form-7' );
+  }
+  }
+  add_action( 'wp_enqueue_scripts', 'load_recaptcha_js',100 );
 
 //head内のヴァージョンを非表示
 remove_action('wp_head','wp_generator');

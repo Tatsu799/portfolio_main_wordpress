@@ -43,7 +43,7 @@
           <?php wp_reset_postdata(); ?>
         </div>
         <div class="works-top-wrapper__con__btn fadeUpTrigger">
-          <a href="<?php echo get_page_link(181); ?>"><!-- 本番環境ではID5 -->
+          <a href="<?php echo get_page_link(5); ?>"><!-- 本番環境ではID5 -->
             <p>実績一覧</p>
           </a>
         </div>
@@ -150,7 +150,7 @@
           <?php wp_reset_postdata(); ?>
         </div>
         <div class="news-top-wrapper__con__btn fadeUpTrigger">
-          <a href="<?php echo get_page_link(191); ?>"><!-- 本番環境ではID208 -->
+          <a href="<?php echo get_page_link(208); ?>"><!-- 本番環境ではID208 -->
             <p>お知らせ一覧</p>
           </a>
         </div>
