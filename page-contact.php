@@ -10,7 +10,7 @@
         <div class="contact-wrapper__ttl">
           <div class="ttl">
             <p>お問い合わせ</p>
-            <h2 class="ttl-main" data-en="Contact"><span>CONTACT</span></h2>
+            <h1 class="ttl-main" data-en="Contact"><span>CONTACT</span></h1>
           </div>
         </div>
         <div class="contact-wrapper__con">

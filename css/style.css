@@ -1586,7 +1586,7 @@ button {
 .works-wrapper__ttl .ttl-main {
   border-bottom: 3px solid #005880;
 }
-.works-wrapper h3 {
+.works-wrapper h2 {
   text-align: center;
   font-size: 2rem;
   width: 100%;
@@ -1595,11 +1595,11 @@ button {
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 480px) {
-  .works-wrapper h3 {
+  .works-wrapper h2 {
     font-size: 1.8rem;
   }
 }
-.works-wrapper h3::after {
+.works-wrapper h2::after {
   position: absolute;
   content: "";
   top: 60px;
@@ -1771,12 +1771,12 @@ button {
 .works-detail-wrapper__con__ttl {
   padding: 2% 0 5% 0;
 }
-.works-detail-wrapper__con__ttl h3 {
+.works-detail-wrapper__con__ttl h2 {
   font-size: 2rem;
   font-weight: 600;
 }
 @media screen and (max-width: 480px) {
-  .works-detail-wrapper__con__ttl h3 {
+  .works-detail-wrapper__con__ttl h2 {
     font-size: 1.3rem;
     line-height: 1;
   }
@@ -1840,16 +1840,16 @@ button {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding: 3% 0 3% 0;
 }
-.works-detail-wrapper__con__box__left__txt h3 {
+.works-detail-wrapper__con__box__left__txt h2 {
   width: 20%;
 }
 @media screen and (max-width: 1024px) {
-  .works-detail-wrapper__con__box__left__txt h3 {
+  .works-detail-wrapper__con__box__left__txt h2 {
     width: 25%;
   }
 }
 @media screen and (max-width: 480px) {
-  .works-detail-wrapper__con__box__left__txt h3 {
+  .works-detail-wrapper__con__box__left__txt h2 {
     font-size: 0.9rem;
     width: 28%;
   }

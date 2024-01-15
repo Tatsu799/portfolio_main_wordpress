@@ -10,10 +10,10 @@
         <div class="works-wrapper__ttl">
           <div class="ttl">
             <p>制作実績</p>
-            <h2 class="ttl-main" data-en="Works"><span>WORKS</span></h2>
+            <h1 class="ttl-main" data-en="Works"><span>WORKS</span></h1>
           </div>
         </div>
-        <h3>My Works</h3>
+        <h2>My Works</h2>
         <div class="works-wrapper__con">
           <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

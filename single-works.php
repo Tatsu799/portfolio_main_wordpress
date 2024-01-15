@@ -12,7 +12,7 @@
         <div class="works-detail-wrapper__ttl">
           <div class="ttl">
             <p>制作実績</p>
-            <h2 class="ttl-main" data-en="Works"><span>WORKS</span></h2>
+            <h1 class="ttl-main" data-en="Works"><span>WORKS</span></h1>
           </div>
         </div>
         <div class="works-detail-wrapper__con">
@@ -20,7 +20,7 @@
             <?php the_post_thumbnail(); ?>
           </div>
           <div class="works-detail-wrapper__con__ttl">
-            <h3><?php the_title(); ?> <br class="__tab __sp"><span><?php the_field('demo2'); ?></span></h3>
+            <h2><?php the_title(); ?> <br class="__tab __sp"><span><?php the_field('demo2'); ?></span></h2>
             <a href="<?php the_field('url')?>"><?php the_field('url')?></a>
           </div>
           <div class="works-detail-wrapper__con__box">

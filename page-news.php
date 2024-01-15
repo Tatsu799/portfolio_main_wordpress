@@ -10,7 +10,7 @@
         <div class="news-wrapper__ttl">
           <div class="ttl">
             <p>ニュース</p>
-            <h2 class="ttl-main" data-en="news"><span>NEWS</span></h2>
+            <h1 class="ttl-main" data-en="news"><span>NEWS</span></h1>
           </div>
         </div>
         <div class="news-wrapper__con">
@@ -35,7 +35,7 @@
               </div>
               <div class="news-wrapper__con__cont__txt">
                 <a href="<?php the_permalink(); ?>">
-                  <h3 class="title"><?php the_title(); ?></h3>
+                  <h2 class="title"><?php the_title(); ?></h2>
                   <P class="txt">
                     <?php echo wp_trim_words(get_the_content(), 70, '...'); ?>
                   </P>

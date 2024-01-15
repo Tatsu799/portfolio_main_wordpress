@@ -10,7 +10,7 @@
         <div class="about-wrapper__ttl">
           <div class="ttl">
             <p>自己紹介</p>
-            <h2 class="ttl-main" data-en="About"><span>ABOUT</span></h2>
+            <h1 class="ttl-main" data-en="About"><span>ABOUT</span></h1>
           </div>
         </div>
         <div class="about-wrapper__con">
