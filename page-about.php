@@ -2,16 +2,21 @@
   <main>
     <section class="about" id="about">
       <div class="about-wrapper __inner">
-        <div class="__breadcrumb">
+        <!-- <div class="__breadcrumb">
           <a href="<?php echo home_url();?>">HOME</a>
           <span>></span>
           <a href="<?php 	echo get_the_permalink();?>">ABOUT</a>
-        </div>
+        </div> -->
         <div class="about-wrapper__ttl">
           <div class="ttl">
             <p>自己紹介</p>
             <h1 class="ttl-main" data-en="About"><span>ABOUT</span></h1>
           </div>
+        </div>
+        <div class="__breadcrumb">
+          <a href="<?php echo home_url();?>">HOME</a>
+          <span>></span>
+          <a href="<?php 	echo get_the_permalink();?>">ABOUT</a>
         </div>
         <div class="about-wrapper__con">
           <div class="about-wrapper__con__box">

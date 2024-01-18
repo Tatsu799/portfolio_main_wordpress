@@ -2,16 +2,16 @@
   <main>
     <section class="news-detail" id="news-detail">
       <div class="news-detail-wrapper __inner">
-        <div class="__breadcrumb">
-          <a href="<?php echo home_url();?>">トップ</a>
-          <a href="<?php echo get_page_link(191); ?>">/ お知らせ</a>
-          <a href="<?php 	echo get_the_permalink();?>">/ <?php the_title(); ?></a>
-        </div>
         <div class="news-detail-wrapper__ttl">
           <div class="ttl">
             <p>ニュース</p>
             <h1 class="ttl-main" data-en="news"><span>NEWS</span></h1>
           </div>
+        </div>
+        <div class="__breadcrumb">
+          <a href="<?php echo home_url();?>">トップ</a>
+          <a href="<?php echo get_page_link(208); ?>">/ NEWS</a>
+          <a href="<?php 	echo get_the_permalink();?>">/ <?php the_title(); ?></a>
         </div>
         <div class="news-detail-wrapper__con">
           <div class="news-detail-wrapper__con__cont">

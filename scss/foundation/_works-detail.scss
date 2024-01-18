@@ -9,7 +9,7 @@
     position: relative;
     &__ttl {
       width: 100%;
-      margin: 0 0 20% 0;
+      margin: 0 0 15% 0;
       position: relative;
       &::after {
         position: absolute;
@@ -24,7 +24,7 @@
         -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
                 clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
         @include mq(pc_max) {
-          left: 43%;
+          left: 39.5%;
           width: 69.5%;
         }
         @include mq(tab) {
@@ -45,6 +45,7 @@
       }
     }
     &__con {
+      position: relative;
       width: 100%;
       &__img {
         width: 100%;
@@ -121,21 +122,26 @@
                     align-items: center;
             border-bottom: 1px solid rgba(0, 0, 0, 0.5);
             padding: 3% 0 3% 0;
-            h2 {
-              width: 20%;
+            h3 {
+              width: 35%;
               @include mq(pc_max) {
-                width: 25%;
+                width: 45%;
               }
               @include mq(sp_1) {
                 font-size: 0.9rem;
-                width: 28%;
+                width: 35%;
+              }
+              @include mq(sp_2) {
+                font-size: 0.9rem;
+                width: 40%;
               }
             }
             p {
+              width: 100%;
               margin: 0 0 0 10%;
               @include mq(sp_1) {
                 font-size: 0.8rem;
-                margin: 0 0 0 15%;
+                margin: 0 0 0 5%;
               }
             }
           }

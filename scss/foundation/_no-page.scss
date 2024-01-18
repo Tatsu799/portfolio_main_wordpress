@@ -1,13 +1,12 @@
 @use "../global" as *;
 
 .no-page {
-  height: 70vh;
+  height: 100vh;
   padding: 100px 0 0 0;
-
   &-wrapper {
-    position: relative;
     .__breadcrumb {
-    top: -490px;
+      display: inline-block;
+      margin: 5% 0 0 4%;
   }
   &__ttl {
     position: relative;

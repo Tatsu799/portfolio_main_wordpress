@@ -2,16 +2,16 @@
   <main>
     <section class="works" id="works">
       <div class="works-wrapper __inner">
-        <div class="__breadcrumb">
-          <a href="<?php echo home_url();?>">HOME</a>
-          <span>></span>
-          <a href="<?php 	echo get_the_permalink();?>">WORKS</a>
-        </div>
         <div class="works-wrapper__ttl">
           <div class="ttl">
             <p>制作実績</p>
             <h1 class="ttl-main" data-en="Works"><span>WORKS</span></h1>
           </div>
+        </div>
+        <div class="__breadcrumb">
+          <a href="<?php echo home_url();?>">HOME</a>
+          <span>></span>
+          <a href="<?php 	echo get_the_permalink();?>">WORKS</a>
         </div>
         <h2>My Works</h2>
         <div class="works-wrapper__con">
