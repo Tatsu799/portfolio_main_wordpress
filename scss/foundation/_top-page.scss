@@ -16,12 +16,21 @@
         font-family: $f-top;
         font-size: 3rem;
         font-weight: 200;
+        @include mq(sp_1) {
+          font-size: 2rem;
+        }
+        @include mq(sp_2) {
+          font-size: 1.5rem;
+        }
       }
       p {
         position: relative;
         top: 45%;
         font-size: 1rem;
         font-weight: 700;
+        @include mq(sp_2) {
+          font-size: 0.8rem;
+        }
       }
     }
   }

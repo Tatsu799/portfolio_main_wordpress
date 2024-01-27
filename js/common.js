@@ -1,5 +1,10 @@
 'use strict';
 
+//トップのタイトルのアニメーション
+jQuery(window).on("load", function() {
+  jQuery('.text-anime').addClass('inview'); 
+});
+
 //スクロールした際にアニメーションを実行する。
 let windowSize = jQuery(window).width();
 jQuery(function () {

@@ -3,7 +3,19 @@
     <section class="top" id="top">
       <div class="top-wrapper __inner">
         <div class="top-wrapper__ttl">
-          <h1 class="txt-1">YOSHI DESIGN</h1>
+          <h1 class="text-anime">
+            <span class="char">Y</span>
+            <span class="char">O</span>
+            <span class="char">S</span>
+            <span class="char">H</span>
+            <span class="char">I</span>
+            <span class="char">D</span>
+            <span class="char">E</span>
+            <span class="char">S</span>
+            <span class="char">I</span>
+            <span class="char">G</span>
+            <span class="char">N</span>
+          </h1>
           <p class="txt-1">Web Design</p>
         </div>
       </div>

@@ -70,7 +70,8 @@ li {
   }
   .ttl-main {
     position: relative;
-    width: 20rem;
+    // width: 20rem;
+    width: 18rem;
     margin: 0 0 8% 0;
     border-bottom: 3px solid #333;
     @include mq(sp_1) {

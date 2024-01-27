@@ -21,8 +21,8 @@
         padding: 0 0 10% 0;
         background-color: $main-blue;
         margin: 0 auto;
-        -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-                clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+        -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
+                clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
         @include mq(pc_max) {
           // left: 43%;
           left: 39.5%;
